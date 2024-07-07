@@ -1,0 +1,81 @@
+.container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+}
+
+/* assets */
+
+.futebol-icon {
+    position: absolute;
+    height: 100px;
+    z-index: -1;
+    top: 10%;
+    right: 10%;
+    animation: float 3s ease-in-out infinite;
+}
+
+.futebol-icon-2 {
+    position: absolute;
+    height: 120px;
+    z-index: -1;
+    top: 10%;
+    left: 0%;
+    filter: invert(0.6) sepia(1) saturate(30) hue-rotate(0deg);
+    animation: float 7s ease-in-out infinite;
+}
+
+.volei-icon {
+    position: absolute;
+    height: 100px;
+    z-index: -1;
+    bottom: -10%;
+    right: 20%;
+    filter: invert(0.6) sepia(1) saturate(30) hue-rotate(0deg);
+    animation: float 5s ease-in-out infinite;
+}
+
+.basquete-icon {
+    position: absolute;
+    height: 100px;
+    z-index: -1;
+    bottom: -30%;
+    left: 10%;
+    filter: invert(0.6) sepia(0.7) saturate(100) hue-rotate(0deg);
+    animation: float 8.5s ease-in-out infinite;
+    animation: rotate 10s ease-in-out infinite;
+}
+
+
+
+/* animações */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
